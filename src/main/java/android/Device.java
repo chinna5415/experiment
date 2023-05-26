@@ -7,7 +7,7 @@ import org.aeonbits.owner.Config;
  ********************************/
 
 @Config.Sources({"file:${user.dir}/src/main/resources/mobileDevice.properties"})
-public interface DeviceConfig extends Config {
+public interface Device extends Config {
 
     String device_name();
     String automation_name();

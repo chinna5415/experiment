@@ -1,6 +1,6 @@
 package android.Drivers;
 
-import android.DeviceConfig;
+import android.Device;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 import org.aeonbits.owner.ConfigFactory;
@@ -10,7 +10,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class Android extends Driver {
+public class Android extends Drivers {
 
     private static AndroidDriver androidDriver;
 
@@ -21,7 +21,7 @@ public class Android extends Driver {
 
     private DesiredCapabilities getDesiredCapabilities() {
 
-        DeviceConfig deviceConfig = ConfigFactory.create(DeviceConfig.class);
+        Device deviceConfig = ConfigFactory.create(Device.class);
 
         DesiredCapabilities desiredCapabilities = new DesiredCapabilities() {{
 

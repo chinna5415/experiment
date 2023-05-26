@@ -6,7 +6,7 @@
 
     <test name="android">
         <classes>
-            <class name="android.Android"></class>
+            <class name="android.Androids"/>
         </classes>
     </test>
 
