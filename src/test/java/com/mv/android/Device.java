@@ -1,4 +1,4 @@
-package android;
+package com.mv.android;
 
 import org.aeonbits.owner.Config;
 

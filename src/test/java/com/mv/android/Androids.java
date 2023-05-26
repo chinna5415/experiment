@@ -1,4 +1,4 @@
-package android;
+package com.mv.android;
 
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
