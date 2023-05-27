@@ -3,7 +3,7 @@
 
 <suite name="Default Suite" guice-stage="DEVELOPMENT">
 
-    <test name="P">
+    <test name="PWA">
         <classes>
             <class name="com.mv.android.Androids"/>
         </classes>
