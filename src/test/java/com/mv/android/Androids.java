@@ -13,7 +13,7 @@ import java.net.URL;
 
 public class Androids {
 
-    @Test
+    /*@Test
     public void temp() throws MalformedURLException, InterruptedException {
         AndroidDriver driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), getDesiredCapabilities());
 
@@ -23,6 +23,43 @@ public class Androids {
         Thread.sleep(100);
         webElement = driver.findElement(By.xpath("//android.widget.Button[@text='No thanks']"));
         webElement.click();
+    }*/
+
+    @Test
+    public void cal() throws MalformedURLException, InterruptedException {
+        AndroidDriver driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), getDesiredCapabilities());
+
+        /*
+            device_name=Chinna
+            automation_name=UiAutomator2
+            platform_name=Android
+            platform_version=12
+            app_package=com.android.chrome
+            app_activity=com.google.android.apps.chrome.Main
+            uuid=emulator-5554
+        */
+
+        Thread.sleep(100);
+        WebElement webElement = driver.findElement(By.xpath("//android.widget.Button[@text='1']"));
+        webElement.click();
+
+        Thread.sleep(10);
+        webElement = driver.findElement(By.xpath("//android.widget.Button[@text='+']"));
+        webElement.click();
+
+        Thread.sleep(10);
+        webElement = driver.findElement(By.xpath("//android.widget.Button[@text='2']"));
+        webElement.click();
+
+        Thread.sleep(10);
+        webElement = driver.findElement(By.xpath("//android.widget.Button[@text='-']"));
+        webElement.click();
+
+        Thread.sleep(10);
+        webElement = driver.findElement(By.xpath("//android.widget.Button[@text='3']"));
+        webElement.click();
+
+
     }
 
     private DesiredCapabilities getDesiredCapabilities() {
